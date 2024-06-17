@@ -96,6 +96,7 @@ body {
 
 .row {
   display: flex;
+  align-self: start;
 }
 
 /* Create three equal columns that sits next to each other */
