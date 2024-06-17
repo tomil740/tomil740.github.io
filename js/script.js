@@ -13,6 +13,3 @@ function showParagraph() {
   }
 }
 
-function hideP(){
-  document.getElementById("myParagraph").style.display = "none"
-  }
