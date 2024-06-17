@@ -32,10 +32,21 @@
         <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
         <span class="nav-title">Tomi Levi,apps developer</span>
          <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="tomil@hotmail.co.il">
-          <span class="button-text">Contact Me</span>
-        </a>
+         <div class="row">
+          <div class="column">
+            <a href="https://github.com/tomil740">
+            <img src="./assets/images/gitHub2.png" alt="Snow" width = "100" height = "50"></a></div>
+          <div class="column">
+            <a href="https://www.linkedin.com/in/tomilevi/">
+            <img src="./assets/images/linkdean2.png" alt="Snow" width="120" height = "50"></a></div>
+            <div class="column">
+              <a class="button" href="tomil@hotmail.co.il">
+                <span class="button-text">Contact Me</span>
+              </a>
+            </div>
+        </div>
       </a>
+      
     </div>
 
     <!-- MAIN PAGE CONTENT -->
@@ -51,11 +62,15 @@
             - Change the number to point to your Unemployable & replace the OpenSea link with your own
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
-          <img src="assets/images/profileImg.png" class="portfolio-header-image">
+          <img src="./assets/images/profileImg.png" class="portfolio-header-image">
           <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
             <span class="image-caption"></span>
           </a>
         </div>
+
+       
+          
+   
 
           <!-- 
             TODO
@@ -82,7 +97,8 @@
               </div>
             </div>
             <a class="button" id="my-work-link">
-              <span class="button-text">Check out my projects</span> 
+              <span class="button-text">
+                <h3>Check out my projects</h3></span> 
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
         </div>
@@ -109,30 +125,61 @@
           </ul>
            
           <div class="body-text">
+
+            <a id="myButton" class="button" onclick="showParagraph()">
+              Specific skills and experiences :
+            </a>
+            <ul id="myParagraph">
+              <li>Strong understating of kotlin as a programing language</li>
+              <li>Strong control and understanding of KMP </li>
+              <li>control the java programming language </li>
+              <li>comfortable with compose UI </li>
+              <li>comfortable with XML</li>
+              <li>experiences migrating projects from XML to compose</li>
+              <li>good understaffing of different data types pull as images videos and etc…</li>
+              <li>Good understanding of different build architectures as MVVM ,MVI ,MVP MVC </li>
+              <li>clean architecture rules and etc…</li>
+              <li>Experiences with multiModule projects </li>
+              <li>good understanding of android components and different apis</li>
+              <li>comfortable with different dependency injection libraries </li>
+              <li>Strong control of OOP in general </li>
+              <li>experiences with time and space complexity inspections for performance improvements </li>
+              <li>Controll the SQL language , ideal query and general </li>
+              <li>Experiences with different SQL and noSql technologies</li>
+              <li>mongoDb realm , sql Delight , room </li>
+              <li>Experiences with api requests and caching strategies with different technologies</li>
+              <li>Experiences working with resource files for icons different languages file accessibility and etc…</li>
+              <li>Experiences with compose metrical 3 components and theme to work as native to both IOS and android </li>
+              <li>Good understating of git </li>
+              <li>Experiences working with remote db , fireBase different tools</li>
+              </ul>
             
+
           </div>
           <div class="row">
             <div class="column">
-              <img src="assets/images/platformsIcon/1.png" alt="Snow" style="width:100%"height="55"> 
+              <img src="./assets/images/platformsIcon/1.png" alt="Snow" width="125" height = "42">
             </div>
             <div class="column">
-              <img src="./assets/images/platformsIcon/2.png" alt="Snow" style="width:100%"height="55">            </div>
+              <img src="./assets/images/platformsIcon/2.png" alt="Snow" width="125" height = "42">           </div>
             <div class="column">
-              <img src="./assets/images/platformsIcon/3.png" alt="Snow" style="width:100%"height="55">             </div>
+              <img src="./assets/images/platformsIcon/3.png" alt="Snow" width="125" height = "42">           </div>
             <div class="column">
-              <img src="./assets/images/platformsIcon/4.png" alt="Snow" style="width:100%"height="55">             </div>
+              <img src="./assets/images/platformsIcon/4.png" alt="Snow" width="125" height = "42">           </div>
             <div class="column">
-              <img src="./assets/images/platformsIcon/5.png" alt="Snow" style="width:100%"height="55">             </div>
+              <img src="./assets/images/platformsIcon/5.png" alt="Snow" width="125" height = "42">           </div>
+              </div>
+              <div class="row">
             <div class="column">
-              <img src="./assets/images/platformsIcon/6.jpeg" alt="Snow" style="width:100%"height="55">             </div>
+              <img src="./assets/images/platformsIcon/6.jpeg" alt="Snow" width="125" height = "42">             </div>
             <div class="column">
-              <img src="./assets/images/platformsIcon/7.png" alt="Snow" style="width:100%"height="55">             </div>
+              <img src="./assets/images/platformsIcon/7.png" alt="Snow" width="125" height = "42">          </div>
             <div class="column">
-              <img src="./assets/images/platformsIcon/8.png" alt="Snow" style="width:100%"height="55">             </div>
+              <img src="./assets/images/platformsIcon/8.png" alt="Snow" width="125" height = "42">           </div>
             <div class="column">
-              <img src="./assets/images/platformsIcon/9.jpg" alt="Snow" style="width:100%"height="55">           </div>
-            <div class="column">
-              <img src="./assets/images/platformsIcon/10.webp" alt="Snow" style="width:100%" height="55">            </div>
+              <img src="./assets/images/platformsIcon/9.jpg" alt="Snow" width="125" height = "42">          </div>
+              <div class="column">
+                <img src="./assets/images/platformsIcon/10.webp" alt="Snow" width="125" height = "42">          </div>
           </div>
           
           </body>
@@ -169,36 +216,48 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
+            <a href="https://github.com/tomil740/DeliveryGuyAnalyzer/blob/production/README.md">
             <img src="./assets/images/MVPprofile.png" class="project-image">
+            </a>
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Delivery guy analyzer(MVP)</div>
+              <div class="subheader-text project-title">DeliveryGuyAnalyzer</div>
               <div class="body-text project-card-text">
+                this is an MVP prudection version,
                 Delivery guy analyzer MVP version is an production native app for IOS and Android , This version is build to be as clean and simple as possible to serve the main use case of the idea. For all features check out the app full version :
               </div>
             </div>
-            <a class="button" href="https://github.com/tomil740/DeliveryGuyAnalyzer">
+            <a class="button" href="https://github.com/tomil740/DeliveryGuyAnalyzer/blob/production/README.md">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
           <div class="project-card">
+            <a href="https://github.com/tomil740/MyWork1.20-Native-/blob/branch-name/README.md">
             <img src="./assets/images/mainpresnetation.png" class="project-image">
+          </a>
             <div class="project-card-text-container">
               <div class="subheader-text project-title">MyWork</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="body-text project-card-text">
+                MyWork is a local offline app build with kotlin and compose UI ,that helps the user simply track his work/effective time. The app is very resource efficient and can supply conclusion as statistics and etc… , about the user time management in the most intuitive and easy way.
+             </div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="https://github.com/tomil740/MyWork1.20-Native-/blob/branch-name/README.md">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
           <div class="project-card">
+            <a href="https://github.com/tomil740/DeliveryGuyIncomeAnalyzer/blob/main/README.md">
             <img src="./assets/images/fullApp.png" class="project-image">
+          </a>
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">Income analyzer...</div>
+              <div class="body-text project-card-text">
+                This is the fully featured version of the app,
+                Delivery Income Analyzer is a KMP app that works natively on both IOS and Android, It is mostly built on Compose UI . The app provides delivery personnel with all the data they need regarding their work in order to accurately evaluate their work.
+              </div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="https://github.com/tomil740/DeliveryGuyIncomeAnalyzer/blob/main/README.md">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
