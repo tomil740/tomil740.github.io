@@ -1,0 +1,22 @@
+body{
+    margin:0 75px;
+    min-width: 1050px;
+    background: linear-gradient(180deg, #FAFAFA 0%, #FCFCFC 100%);
+}
+
+header{
+    margin: 0 72px;
+}
+
+a{
+    text-decoration: none;
+    color: #555555;
+}
+strong{
+    color: #39DB4A;
+}
+
+h1,h2,h3,h4,p,ul,li{
+    padding: 0;
+    margin: 0;
+} 

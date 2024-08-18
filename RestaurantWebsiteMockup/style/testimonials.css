@@ -1,0 +1,204 @@
+.heroSection2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 142px 0px;
+}
+
+.heroSection2
+.Text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.Text
+.header{
+    font-size: 62px;
+    font-weight: 800;
+}
+
+.Text
+.subHeader{
+    
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.Text
+.sectionSubHeader
+{
+    margin-top: 88px;
+}
+
+.actionButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 24px;
+    color: black;
+    font-size: 22px;
+}
+
+.actionButtons
+.actionBut{
+    padding: 14px 28px;
+    background-color: #39DB4A;
+    color: #FFFFFF;
+    border-radius: 35px;
+    margin-left: 14px;
+    margin-right: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.actionButtons
+.playIcon{
+    position: relative;
+    width: 54px;
+    height: 54px;
+}
+.actionButtons
+.playIcon
+.background{
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    background-color: white;
+    border-radius:360px;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.actionButtons
+.playIcon
+.icon{
+    position: absolute;
+    object-fit: scale-down;
+    height: 26px;
+    width: 26px;
+    top: 25%;
+    left: 25%;    
+}
+
+.heroSection2
+.Images{
+    position: relative;
+    display: flex;
+    align-items:end;
+    width: 100%;
+    height: 100%;
+}
+
+.heroSection2
+.background{
+    object-fit: scale-down;   
+    width: 100%;
+    height: 50%;
+    
+}
+
+.heroSection2
+.mainImage{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.heroSection2
+.Images
+.subIcon1{
+    position: absolute;
+    top: 65%;
+    right: 17%;
+}
+
+.heroSection2
+.Images
+.subIcon2{
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+
+.Images
+.comment{
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+}
+
+.Images
+.text{
+    position: absolute;
+    right: 120px;
+    bottom: 68px;
+    font-size: 19px;
+}
+
+
+.comment
+.background{
+    position: relative;
+    object-fit: scale-down;
+    width: 90%;
+}
+
+.FeedbackSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.FeedbackSection
+.theText{
+    display: flex;
+    flex-direction: column;
+}
+
+.theText
+.header{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.theText
+.rating
+.rate
+strong{
+    color: #807E7E;
+}
+
+.theText
+.rating{
+    display: flex;
+}
+.profileIcons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 230px;
+}
+.profileIcons
+.IconItem{
+    position: absolute;
+    object-fit: scale-down;
+    width: 80px;
+    border-radius: 360px;
+}
+
+#profileIcon1{
+    left: 48px;
+    z-index: 2;
+}
+#profileIcon2{
+    width: 73px;
+
+}
+#profileIcon3{
+    left: 100px;
+    z-index: 3;
+
+}

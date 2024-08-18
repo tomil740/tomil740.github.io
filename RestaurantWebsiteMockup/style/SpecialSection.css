@@ -1,0 +1,143 @@
+.SpecialDishes{
+    margin: 142px 0px;
+}
+
+
+.SpecialDishes
+.sectionSubHeader{
+    justify-content: start;
+}
+
+.SpecialDishes
+.sectionHeader{
+    justify-content: start;
+}
+
+.SpecialDishes
+.controllHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items:last baseline;
+}
+
+.SpecialDishes
+.buttonsSection{
+    display: flex;
+    column-gap: 42px;
+}
+
+.buttonsSection
+.Skipbut{
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.buttonsSection
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: #39DB4A;
+    border-radius: 360px;
+}
+.buttonsSection
+.background1{
+    width: 100%;
+    height: 100%;
+    background-color: #EFEFEF;
+    border-radius: 360px;
+}
+
+.buttonsSection
+.icon{
+    position: absolute;
+    height: 26px;
+    width: 11px;
+    bottom: 35%;
+    left: 45%;
+}
+
+.SpecialDishesLst{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.SpecialDishesLst
+.item{
+    position: relative;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 16px 21px;
+}
+
+.item
+.image{
+    object-fit: scale-down;
+}
+
+.item
+.header{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.item
+.subHeader{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.item
+.priceRating{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.item
+.rating{
+    display: flex;
+    align-items: center;
+}
+
+.item
+.price{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.item
+strong{
+    color: #FF6868;
+    font-size: 21px;
+}
+
+.rating
+.rate{
+    font-size: 24px;
+    color: #454545;
+    margin-left: 12px;
+}
+
+.item
+.likeSection{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 87px;
+    height: 75px;
+    background-color:#39DB4A;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.likeSection
+.icon{
+    position: absolute;
+    top: 26px;
+    right: 30px;
+}

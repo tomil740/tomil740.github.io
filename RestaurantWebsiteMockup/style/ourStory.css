@@ -1,0 +1,73 @@
+.heroSection3{
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    justify-content: center;
+    align-items: center;
+    column-gap: 120px;
+    margin: 142px 0px;
+}
+
+.heroSection3
+.Text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    align-items: start;
+}
+.heroSection3
+.Text
+.actionBut{
+    padding: 14px 48px;
+    background-color: #39DB4A;
+    color: #FFFFFF;
+    font-size: 22px;
+    border-radius: 35px;
+    margin-left: 14px;
+    margin-right: 24px;
+}
+
+.heroSection3
+.Images{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*edit and reuse differnt section layout*/
+.AttributeItems{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.AttributeItems
+.AttributeItem{
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    row-gap: 8px;
+    border-radius: 35px;
+    margin: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 150px;
+    color: #90BD95;
+}
+
+.AttributeItem
+.icon{
+    object-fit: scale-down;
+    width: 84px;
+    height: 84px;
+}
+
+.AttributeItem
+.header{
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.AttributeItem
+.subText{
+    text-align: center;
+}
