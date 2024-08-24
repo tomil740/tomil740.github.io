@@ -1,0 +1,59 @@
+.modelItem{
+    background-image: url("../assets/images/Item1Background.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#item2{
+    background-image: url("../assets/images/Item2Background.png");
+}
+
+.modelItem
+.headerSection{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.modelItem
+.headerSection
+.header{
+    font-size: 68px;
+}
+.modelItem
+.headerSection
+.subHeader{
+    text-decoration: underline;
+    font-size: 28px;
+}
+.modelItem
+.headerSection
+.price{
+    font-size: 18px;
+}
+
+.modelItem
+.actionButtons{
+    margin: 2%;
+}
+.modelItem
+.actionButtons button{
+    margin: 0 40px;
+    font-size: 16px;
+    padding: 10px 74px;
+    background-color: white;
+}
+
+.modelItem
+.actionButtons
+.mainBut{
+    background-color: rgb(55, 55, 255);
+    color: white;
+}

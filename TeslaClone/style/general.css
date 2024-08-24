@@ -1,0 +1,9 @@
+body,ul,li,a,menu,article,main,header,nav,h1,h3,p,button{
+    all: unset;
+}
+section{
+    margin: 0px;
+    padding: 0px;
+}
+
+

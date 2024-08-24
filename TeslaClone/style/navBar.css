@@ -1,0 +1,58 @@
+#MainMenu{
+    position:absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+.Center{
+    font-size: 18px;
+    color: white;
+}
+.Center > li{
+    margin: 0 9px;   
+}
+.Center::after{
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    width: 100vw;
+    height: 40vh;
+    scale:0;
+}
+.Center:hover::after{
+    scale: 1;
+}
+
+.Center>li:hover{
+    padding: 9px;
+    background-color: rgb(26, 26, 26);
+}
+
+.right>img:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#MainMenu:hover{
+    background-color: rgb(98, 93, 93);
+}
+
+.right > img{
+    margin: 0 9px;   
+}
+
+.mainMenuIcon{
+    height: 20px;
+    object-fit: scale-down;
+}
+.leftMenuIcon{
+    height: 20px;
+    object-fit: scale-down;
+}
