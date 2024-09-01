@@ -1,0 +1,181 @@
+header{
+    margin: 0 4%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.TopLoginHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.TopLoginHeader
+#SearchIcon{
+    width: 1.6rem;
+    height: 1.6rem;
+    padding: 4px;
+}
+.TopLoginHeader
+#SearchIcon:hover{
+    background-color: rgb(158, 156, 156,12%);
+   
+}
+
+.TopLoginHeader
+.CenterdMenu{
+    color: rgba(0, 0, 0, 0.655);
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    transform: translateX(50%);
+
+}
+.TopLoginHeader
+.CenterdMenu>li:first-child{
+    color: black;
+}
+.TopLoginHeader
+.CenterdMenu>li{
+    font-size: 1.4rem;
+    padding: 4px;
+}
+.TopLoginHeader
+.CenterdMenu>li:hover{
+    background-color: rgb(158, 156, 156,12%);
+}
+
+.TopLoginHeader
+.rightMenuSection > button{
+    font-size: 1.1rem;
+    background-color: #567B95;
+    border-width: 0.7px;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 600;
+    padding: 0.8rem 1.2rem;
+    margin: 0.6rem;
+}
+.TopLoginHeader
+.rightMenuSection > button:hover{
+    background-color: #335064;
+}
+
+.mainHeaderSection{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+.mainHeaderSection >p{
+    margin-top: 1.5rem;
+}
+
+.mainHeaderSection
+.mainLogo{
+    object-fit: scale-down;
+    max-width: 34vw;
+}
+
+nav#mainMenu{
+    padding:13px 0;
+    border-bottom: solid 1px black;
+}
+nav#mainMenu>menu{
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+nav#mainMenu>menu>li#center{
+    width: 0.8px;
+    background-color: gray;
+}
+.LiveDataMenu>menu{
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px black;
+    margin-top: 0.3rem;
+    padding: 0.55rem 0;
+}
+
+.LiveDataMenu>menu>li{
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding: 1rem;
+}
+.LiveDataMenu>menu>li:hover{
+    color: rgb(50, 50, 50,85%);
+}
+.LiveDataMenu>menu>li:first-child{
+    color: red;
+}
+.timeTag{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.shrinkedMain{
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding: 2px 9px;
+    justify-content: space-between;
+    background-color: white;
+    border-top:solid 0.35px rgb(176, 176, 176);
+    border-bottom:solid 0.35px rgb(176, 176, 176);
+    scale: 0;
+    position: absolute;
+}
+.shrinkedMain
+.mainLogo{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.shrinkedMain
+.subMenuLogo{
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.shrinkedDateTopBar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 2px 9px;
+    background-color: white;
+    border-bottom:solid 0.35px rgb(176, 176, 176);
+    font-size: 1.3rem;
+    font-weight: 800;
+    scale: 0;
+}
+.shrinkedDateTopBar a{
+    position: absolute;
+    right: 12px;
+    font-size: 1.1rem;
+    color: rgb(87, 135, 212);
+}
+
+@media (max-width:1000px){
+    .TopLoginHeader,.mainHeaderSection,#mainMenu{
+        scale: 0;
+    }
+
+    header{
+        margin: 0;
+    }
+
+    .LiveDataMenu{
+        background-color: white;
+    }
+    .LiveDataMenu>menu{
+        border-top: none;
+    }
+
+    .shrinkedDateTopBar, .shrinkedMain{ 
+        scale:1;
+        position: relative;
+    }
+
+}

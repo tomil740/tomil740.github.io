@@ -1,0 +1,130 @@
+main{
+    margin: 0 4%;
+}
+
+main
+.mainSection{
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    column-gap: 10px;
+}
+
+.mainItemsSection
+.mainNewsItem{
+    display: grid;
+    grid-template-columns: 0.35fr 0.65fr;
+    border-bottom:solid 1px black;
+    padding: 3% 0;
+}
+.mainItemsSection
+.mainNewsItem:first-child{
+    border-top:solid 1px black;
+}
+
+main
+.itemImage{
+    display: flex;
+    justify-content: center;
+}
+
+main
+.itemImage img{
+    max-width: 100%;
+    max-height: 90%;
+}
+
+main
+.opinionLst{
+    position: relative;
+    border-top:solid 1px gray;
+    border-left:solid 1px gray;
+    padding: 4% 10px;
+}
+main
+.opinionLst::before{
+    position: absolute;
+    width: 14px;
+    height: 25px;
+    content: "";
+    background-color: #F8F8F8;
+    top: -0.5%;
+    left: 0;
+
+}
+
+h4.sectionHeader{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+main
+.opinionItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+    border-bottom: solid 1px lightgray;
+}
+
+.opinionItem
+.textSection{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:start;
+    row-gap: 9px;
+}
+
+.paragrphaItemText{
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: rgb(56, 63, 71);
+}
+
+
+h3.ItemHeader{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.opinionItem
+.profileImg{
+    max-width: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.newsLst
+.newsItem{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:start;
+    row-gap: 9px;
+    padding: 2% 0;
+    border-bottom: solid 1px lightgray;
+}
+.newsLst>.newsItem:last-child{
+    border-bottom: none;
+}
+#previewImg{
+    max-width: 100%;
+}
+#extandabeopinionItem{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:normal;
+}
+#theActulItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:1100px){
+    main
+    .mainSection{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,23 @@
+h3,h1,h2,h4,h5,h6,p,a,li,menu{
+    all: unset;
+}
+.arrow {
+    border: solid rgb(114, 114, 114);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+html{
+    font-size: 0.625rem;
+}
+
+body{
+    background-color: #F8F8F8;
+    margin: 0;
+}
