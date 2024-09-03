@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/header.css">
 </head>
-<body>
+<body> 
     <header>
         <section class="TopLoginHeader">
             <img id="SearchIcon" src="assets/icons/SearchIconPng.png">
@@ -42,7 +42,14 @@
                 +1.13%
                 </p>
         </section>
-        <nav id="mainMenu">
+        <nav id="mainMenuConiner">
+
+            <img id="closeMenuIcon" src="assets/icons/SearchIconPng.png">
+            <section id="shrinkedMenuSearchBarContiner">
+                <input type="text" placeholder="SEARCH">
+                <button>Go</button>
+            </section>
+
             <menu>
                 <li>
                     <a href="#">U.S. <i class="arrow down"></i></a>
@@ -82,19 +89,19 @@
                 </li>
             </menu>
         </nav>
-        <section class="shrinkedMain">
-            <img class="subMenuLogo" src="assets/icons/menu.png">
+        <section id="shrinkedMain" class="shrinkedMain">
+            <img id="openMenuBut" class="subMenuLogo" src="assets/icons/menu.png">
             <img class="mainLogo" src="assets/icons/The-New-York-Times-Logo.png">
             <img class="subMenuLogo" src="assets/icons/user.png">
         </section>
-        <section class="shrinkedDateTopBar">
+        <section  id="shrinkedDateTopBar" class="shrinkedDateTopBar">
             <p>Sunday, September 1, 2024</p>
                 
             <a href="#">SUBSCRIBE FOR $0.50/WEEK</a>
         </section>
 
         </section>
-        <section class="LiveDataMenu">
+        <section id="LiveDataMenu" class="LiveDataMenu">
             <menu>
                 <li>
                     <a href="#">Live</a>
@@ -111,7 +118,7 @@
             </menu>
         </section>
     </header>
-    <main>
+    <main id="main">
         <article class="mainSection">
             <section class="mainItemsSection">
                 <section class="mainNewsItem">
@@ -238,6 +245,6 @@
     <footer>
 
     </footer>
-
+    <script src="scripts/buttons.js"></script>
 </body>
 </html>

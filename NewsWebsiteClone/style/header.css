@@ -2,7 +2,7 @@ header{
     margin: 0 4%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
 }
 .TopLoginHeader{
     display: flex;
@@ -75,17 +75,20 @@ header{
     max-width: 34vw;
 }
 
-nav#mainMenu{
+nav#mainMenuConiner{
     padding:13px 0;
     border-bottom: solid 1px black;
 }
-nav#mainMenu>menu{
+nav#mainMenuConiner img ,nav#mainMenuConiner section{
+    display: none;
+}
+nav#mainMenuConiner>menu{
     margin: 0 10%;
     display: flex;
     justify-content: space-around;
     font-size: 1.5rem;
 }
-nav#mainMenu>menu>li#center{
+nav#mainMenuConiner>menu>li#center{
     width: 0.8px;
     background-color: gray;
 }
@@ -157,25 +160,76 @@ nav#mainMenu>menu>li#center{
     color: rgb(87, 135, 212);
 }
 
+#shrinkedMenuSearchBarContiner{
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 0.053fr;
+    column-gap: 0.9rem;
+    height: 3.45rem;
+}
+#shrinkedMenuSearchBarContiner input{
+    font-size: 1.8rem;
+    border-radius: 3px;
+}
+#shrinkedMenuSearchBarContiner button{
+    padding: 1rem;
+    background-color: rgb(100, 186, 229,50%);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+#shrinkedMenuSearchBarContiner button:hover{
+    background-color: rgb(100, 186, 229,100%);   
+}
+#closeMenuIcon{
+    margin: 1.8rem 2.9rem;
+    width: 26px;
+
+}
+
 @media (max-width:1000px){
-    .TopLoginHeader,.mainHeaderSection,#mainMenu{
+    .TopLoginHeader,.mainHeaderSection{
         scale: 0;
     }
-
     header{
         margin: 0;
     }
-
     .LiveDataMenu{
         background-color: white;
     }
     .LiveDataMenu>menu{
         border-top: none;
     }
-
     .shrinkedDateTopBar, .shrinkedMain{ 
         scale:1;
         position: relative;
     }
-
+    #mainMenuConiner{
+        width: 100vw;
+        overflow-x: hidden;
+        background-color: white;
+        z-index: 1;
+        display: none;
+    }
+    #mainMenuConiner menu{
+        flex-direction: column;
+        padding: 0 3.6rem;
+    }
+    #mainMenuConiner menu li a{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.8rem;
+        font-weight: 800;
+        padding:3.4rem 0;
+        border-bottom:solid 0.5px gray;
+    }
+    nav#mainMenuConiner>menu{
+        margin: 0;
+    }
+    nav#mainMenuConiner img{
+        display:block;
+    }
+    nav#mainMenuConiner section{
+        display: grid;
+    }
 }
