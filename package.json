@@ -2,8 +2,8 @@
 {
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node comments.js",
-    "dev": "nodemon comments.js"
+    "start": "node PrimitiveTypes.js",
+    "dev": "nodemon PrimitiveTypes.js"
   },
   "dependencies": {
     "express": "^4.19.2",
