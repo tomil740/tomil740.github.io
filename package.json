@@ -2,8 +2,8 @@
 {
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node namingExe.js",
-    "dev": "nodemon namingExe.js"
+    "start": "node templateLiterals.js",
+    "dev": "nodemon templateLiterals.js"
   },
   "dependencies": {
     "express": "^4.19.2",
