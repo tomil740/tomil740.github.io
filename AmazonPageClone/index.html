@@ -59,12 +59,36 @@
                 Shop the gaming store
             </ul>
         </menu>
+        <section class="shrinkedMenu">
+            <div class="extendedMenu">
+                <img  src="assets/hamburger-menu.png">
+            </div>
+
+            <div class="amazon-header-middle-section2">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button">
+                <img class="search-icon" src="assets/icons/search-icon.png">
+                </button>
+            </div>
+           
+        </section>
     </header>
     <main>
         <article class="productItem">
             <section class="productMedia">
-                <img class="productImg" src="https://m.media-amazon.com/images/I/61hiaNpe8yL._AC_SX679_.jpg">
-
+                <div class="previewList">
+                    <img src="https://m.media-amazon.com/images/I/41v2LXm2S7L._AC_US40_.jpg">
+                    <img src="https://m.media-amazon.com/images/I/51mbSeAYjGL._AC_US40_.jpg">
+                    <img src="https://m.media-amazon.com/images/I/516tK8HSRUL._AC_US40_.jpg">
+                    <img src="https://m.media-amazon.com/images/I/41ceXuvYoOL._AC_US40_.jpg">
+                    <img src="https://m.media-amazon.com/images/I/51cCJwOeCpL._AC_US40_.jpg">
+                    <img src="https://m.media-amazon.com/images/I/41w2kPeMD9L._AC_US40_.jpg">
+                    <img src="https://m.media-amazon.com/images/I/A15umezEAVL.SS40_BG85,85,85_BR-120_PKdp-play-icon-overlay__.png">
+                </div>
+                <div class="mainImage">
+                    <img class="productImg" src="https://m.media-amazon.com/images/I/61hiaNpe8yL._AC_SX679_.jpg">
+                    <!--!Add all of the images options and switch betweeen the visibelty -->
+                </div>
             </section>
             <section class="productInfo">
                 <h2>Fitness Watches for Women Men 40mm Fitness Tracker Watch for Step/Sleep/Heart Rate Monitor Watch, Activity Trackers and Smart Watches for Women for Samsung Galaxy Android Apple iPhone, Smart Watches</h2>
@@ -80,7 +104,40 @@
                 <p>No Import Fees Deposit & $21.53 Shipping to Israel <strong>Details</strong></p>
             </section>
             <section class="deliverySection">
-
+                <h5 class="price">59</h5>
+                <p>
+                    No Import Fees Deposit &<br> $21.53 Shipping to Israel
+                </p>
+                <p>
+                    Delivery <strong>Thursday, September 19</strong>
+                </p>
+                <p>
+                    Deliver to Israel
+                </p>
+                <h3 class="inStockLabel">In Stock</h3>
+                <select name="quantity" id="quantityId">
+                  <option value="number1">Quantity: 1</option>
+                  <option value="number2">Quantity: 2</option>
+                  <option value="number3" disabled>Quantity: 3</option>
+                  <option value="number4" selected>Quantity: 4</option>
+                </select>
+                <button class="addToCart">Add to Cart</button>
+                <button class="buyItNow">Buy Now</button>
+                <div class="info">
+                    <div class="infoTitles">
+                        <p>Ships from</p>
+                        <p>Sold by</p>
+                        <p>Returns</p>
+                        <p id="specialPayment1">payment</p>
+                    </div>
+                    <div class="infoTitlesData">
+                        <p>Amazon</p>
+                        <p>FOSMET Direct</p>
+                        <p>30 days refund/replacement</p>
+                        <p>Secure transaction</p>
+                    </div>
+                </div>
+                
             </section>
         </article>
     </main>

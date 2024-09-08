@@ -1,20 +1,45 @@
 main{
-    margin: 140px 100px;
+    margin: 140px 20px;
+    margin-left: 100px;
 }
 main .productItem{
     display: grid;
-    grid-template-columns: 0.3fr 0.55fr 0.15fr;
+    grid-template-columns: 0.3fr 0.5fr 0.2fr;
+    justify-content: space-between;
 }
 
 main .productItem
 .productMedia{
    display: flex;
+   flex-direction: row;
    align-items: top;
 }
 main .productItem
 .productMedia .productImg{
     max-width: 100%;
     max-height: 75%;
+}
+
+main .productItem .productMedia
+.previewList{
+    position: absolute;
+    left: 10px;
+    display:flex;
+    flex-direction: column;
+
+}
+main .productItem .productMedia
+.previewList img:first-child{
+    background-color: rgb(156, 156, 247,24%);
+}
+
+main .productItem .productMedia
+.previewList img{
+    max-width: 100%;
+    padding: 4px;
+    margin: 4px;
+    border:1px solid black;
+    border-radius: 15px;
 }
 
 main .productItem
@@ -114,4 +139,146 @@ p{
 .productInfo
 p strong{
     color: lightskyblue;
+}
+
+.productItem
+.deliverySection{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-left: 36px;
+    padding: 16px;
+    height: fit-content;
+    border: solid 1px rgb(151, 150, 150);
+    border-radius: 15px;
+    
+}
+
+.productItem
+.deliverySection
+h5{
+    margin-left: 10px;
+    position: relative;
+    font-size: 32px;
+    color: black;
+}
+.productItem
+.deliverySection
+h5::after{
+    content: "99";
+    font-size: 18px;
+    position: absolute;
+    top: 2.5px;
+    left: 34px;
+    font-weight: normal;
+}
+.productItem
+.deliverySection
+h5::before{
+    content: "$";
+    font-size: 18px;
+    position: absolute;
+    top: 2.5px;
+    left: -7px;
+    font-weight: normal;
+}
+
+.productItem
+.deliverySection
+.inStockLabel{
+    font-size: 23px;
+    color: green;
+}
+
+.productItem
+.deliverySection
+button{
+    padding: 10px 15px;
+    border-radius: 35px;
+    border: none;
+}
+.productItem
+.deliverySection
+button.buyItNow{
+    background-color: orange;
+}
+.productItem
+.deliverySection
+button.addToCart{
+    background-color: rgb(217, 217, 66);
+}
+
+.productItem
+.deliverySection
+.info p{
+    font-size: 14px;
+}
+
+.productItem
+.deliverySection
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2px;
+}
+.productItem
+.deliverySection
+.info
+.infoTitles{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.productItem
+.deliverySection
+.info
+.infoTitles
+#specialPayment1{
+    margin-top: 18px;
+}
+
+.productItem
+.deliverySection
+.info
+.infoTitlesData{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+@media(max-width:950px){
+    header{
+        z-index: 5;
+    }
+    main{
+        margin-top: 180px;
+    }
+    main .productItem{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    .amazon-header-middle-section{
+        display: none;
+    }
+
+
+}
+@media(max-width:650px){
+    main .productItem{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .productItem
+.deliverySection {
+    margin: 0;
+}
+main{
+    margin-top: 280px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+main .productItem
+.productMedia{
+   justify-content: center;
+}
 }

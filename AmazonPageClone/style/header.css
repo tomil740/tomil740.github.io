@@ -54,7 +54,7 @@ nav.MainNavBar
     font-weight: 400;
 }
 
-.amazon-header-middle-section {
+.amazon-header-middle-section ,.amazon-header-middle-section2 {
     flex: 1;
     max-width: 850px;
     margin-left: 10px;
@@ -147,6 +147,73 @@ header .subMenuBar .extendedMenu::after{
 header .subMenuBar .rightSideItem{
     position: absolute;
     right: 25px;
+}
+
+header .shrinkedMenu{
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    height: 65px;
+    background-color: rgb(39, 39, 58);
+    padding: 0 24px;
+
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: left;
+    display: none;
+
+}
+header .shrinkedMenu div{
+    margin-left: 0 45px;
+    margin-right: 85px;
+}
+
+
+
+@media(max-width:950px){
+    header .shrinkedMenu{
+        display: flex;
+    }
+
+    header nav.MainNavBar{
+        grid-template-columns: 1fr 2fr;
+    }
+    .amazon-header-middle-section {
+        position: absolute;
+        top: 75px;
+        left: 55%;
+    }
+    .search-bar{
+        z-index: 3;
+    }
+    header .subMenuBar{
+        height: 55px;
+    }
+    header .subMenuBar ul{
+        display: none;
+    }
+    
+}
+@media(max-width:650px){
+    header nav.MainNavBar{
+        grid-template-columns: 1fr;
+        height: 185px;
+        z-index: 62;
+    }
+    nav.MainNavBar
+.amazon-header-left-section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 22px;
+    z-index: 62;
+}
+header .shrinkedMenu{
+    top: 180px;
+}
+
 }
 
   
