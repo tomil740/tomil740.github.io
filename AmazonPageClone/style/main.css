@@ -1,0 +1,117 @@
+main{
+    margin: 140px 100px;
+}
+main .productItem{
+    display: grid;
+    grid-template-columns: 0.3fr 0.55fr 0.15fr;
+}
+
+main .productItem
+.productMedia{
+   display: flex;
+   align-items: top;
+}
+main .productItem
+.productMedia .productImg{
+    max-width: 100%;
+    max-height: 75%;
+}
+
+main .productItem
+.productInfo{
+    display: flex;
+    flex-direction: column;
+}
+main .productItem
+.productInfo h2{
+    font-size: 32px;
+    font-weight:normal;
+    margin: 12px 0;
+}
+main .productItem .productInfo
+.ratingRow{
+    padding-left: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px rgb(131, 130, 130);
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+}
+
+main .productItem .productInfo
+.ratingStars{
+    height: 20px;
+    margin-right: 42px;
+}
+
+main .productItem .productInfo
+.ratingRow::after{
+    content: "5.0";
+    position: absolute;
+    left: -0px;
+    font-weight: 600;
+}
+main .productItem .productInfo
+.ratingRow p{
+    color: lightskyblue;
+    padding: 0 9px;
+}
+main .productItem .productInfo
+.ratingRow p:nth-child(2){
+    border-right: solid 1.5px black;
+}
+
+main .productItem .productInfo
+.priceContainer{
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+}
+
+main .productItem .productInfo
+.priceTag{
+    font-size: 29px;
+    color: red;
+    font-weight: normal;
+}
+main .productItem .productInfo
+.priceTag strong{
+    margin-left: 10px;
+    position: relative;
+    font-size: 32px;
+    color: black;
+}
+main .productItem .productInfo
+.priceTag strong::after{
+    content: "99";
+    font-size: 18px;
+    position: absolute;
+    top: 2.5px;
+    right: -17px;
+    font-weight: normal;
+}
+main .productItem .productInfo
+.priceTag strong::before{
+    content: "$";
+    font-size: 18px;
+    position: absolute;
+    top: 2.5px;
+    left: -7px;
+    font-weight: normal;
+}
+main .productItem .productInfo .priceContainer
+.ListPrice{
+    font-size: 15px;
+    color: rgb(137, 137, 137);
+}
+
+.productInfo
+p{
+    margin: 6px 0;
+    color: rgb(99, 99, 99);
+}
+.productInfo
+p strong{
+    color: lightskyblue;
+}
