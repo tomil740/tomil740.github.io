@@ -1,0 +1,127 @@
+
+html{
+    all:unset
+}
+h3,p,h2,ol,li{
+  margin: 0;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/resources/menuIcons/entryScreenBackground.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    min-width: 1100px;
+}
+
+main{
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: 20px;
+}
+
+main form .dropDwonMenusSection{
+    display: flex;
+    justify-content: center;
+}
+main form .dropDwonMenusSection div{
+    margin: 55px;
+    font-weight: 400;
+    font-size: 26px;
+    background-color:#4c626a;
+    border-radius: 15px;
+    padding: 12px;
+    color: #ffffff;
+    display: flex;
+} 
+
+main form .dropDwonMenusSection div select{
+  padding:2px 16px;
+  border-radius: 25px;
+  background-color:rgb(76, 98, 106,15%);
+  border: none;
+  color: #fff;
+  font-size: 26px;
+}
+
+
+
+main form .worldTemplatePicker{
+    display: flex;
+}
+
+main form .worldTemplatePicker .worldTemlateitem{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(194, 200, 203,15%);
+    border-radius: 35px;
+    margin: 25px;
+    max-width: 30vw;
+    max-height: 30vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+main form .worldTemplatePicker .worldTemlateitem img{
+    padding: 5%;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+button {
+  background-color: #4c626a; /* Green */
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 55px 105px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 15px;
+  }
+  button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  main form .worldTemplatePicker .worldTemlateitem.pickedItem{
+    background-color: rgba(190, 240, 255, 0.75);
+  }
+
+ main .gameRules{
+  position: absolute;
+  top: 22%;
+  margin: 0% 10%;
+  padding: 12px 24px;
+  background-image:url("/resources/menuIcons/minicraftBackroundRules.webp");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 12px;
+  font-size: 24px;
+  border-radius: 20px;
+  visibility: hidden;
+  }
+  main .gameRules2{
+    visibility: visible;
+  }
+  main .gameRules h3{
+    margin: 0;
+  } 
+
+@media screen and (max-width:1100px){
+  body{
+    background-image: url("/resources/menuIcons/minicraftBackroundRules.webp");
+    background-repeat:repeat;
+  }
+}

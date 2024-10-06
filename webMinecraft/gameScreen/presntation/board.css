@@ -1,0 +1,78 @@
+body{
+    all: unset;
+    background-color: rgb(70, 68, 68);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+
+article#userMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #b3d1dd
+}
+
+article#userMenu .menuItem{
+    max-width: 100%;
+}
+
+article#userMenu .menuItem .menuItemIcon{
+    padding: 16px;
+    max-width: 300px;
+    max-height: 55px;
+}
+
+article#userMenu .menuItem  .counterPer{
+    font-size: 17px;
+    text-align: center;
+}
+
+.pickedItem{
+    background-color: rgb(199, 157, 157);
+    padding: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+main article#gameBoard{
+    display: flex;
+}
+
+article#gameBoard .boardColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+article#gameBoard .boardColumn .squareItem{
+    margin: 0.09px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 4vw;
+    height: 5vh;
+    background-image: url("/resources/menuIcons/sky.png");
+    background-size: 3vw;
+}
+
+article#gameBoard .boardColumn .squareItemType1{
+    background-image: url("/resources/menuIcons/block.png");
+}
+article#gameBoard .boardColumn .squareItemType2{
+    background-image: url("/resources/menuIcons/games.png");
+}
+article#gameBoard .boardColumn .squareItemType3{
+    
+}
+article#gameBoard .boardColumn .squareItemType4{
+    
+}
+article#gameBoard .boardColumn .squareItemType5{
+    background-image: url("/resources/menuIcons/game.png");
+}
